@@ -1,0 +1,23 @@
+{
+  "Header": {
+    "discord": "ديسكورد",
+    "leaderboard": "لوحات الشرف",
+    "recharge": "الدفع وشحن الرصيد",
+    "shop": "عربة الأسرار",
+    "login": "تسجيل الدخول"
+  },  "HomePage": {
+    "welcomeMessage": "عالم الأسرار",
+    "heroSubtitle": "عش المغامرة في عالم سحري",
+    "downloadButton": "تحميل"
+  },
+  "Navbar": {
+    "home": "الرئيسية",
+    "download": "التحميل",
+    "leaderboard": "لوحة الصدارة",
+    "profile": "الملف الشخصي"
+  },
+  "ProfilePage": {
+    "title": "ملفي الشخصي",
+    "editButton": "تعديل الملف الشخصي"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "Header": {
+    "discord": "Join Our Discord",
+    "leaderboard": "Leaderboards",
+    "recharge": "Recharge & Payments",
+    "shop": "Item Shop",
+    "login": "Login"
+  },  "HomePage": {
+    "welcomeMessage": "World of Secrets",
+    "heroSubtitle": "Experience the magical world of adventure",
+    "downloadButton": "Download Now"
+  },
+  "Navbar": {
+    "home": "Home",
+    "download": "Download",
+    "leaderboard": "Leaderboard",
+    "profile": "Profile"
+  },
+  "ProfilePage": {
+    "title": "My Profile",
+    "editButton": "Edit Profile"
+  }
+}

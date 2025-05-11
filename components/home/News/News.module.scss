@@ -1,0 +1,53 @@
+.news {
+  height: 50vh;
+  padding: 3rem;
+  margin-bottom: 5rem;
+}
+.hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 136, 0, 0.363);
+  }
+}
+.new {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 10rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  font-weight: bold;
+
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    height: 100%;
+    .newsTitle {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      align-self: flex-start;
+    }
+
+    .newsDesc {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(70, 1, 1, 0.144);
+  margin-bottom: 3rem;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
