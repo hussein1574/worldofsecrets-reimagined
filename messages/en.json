@@ -5,10 +5,14 @@
     "recharge": "Recharge & Payments",
     "shop": "Item Shop",
     "login": "Login"
-  },  "HomePage": {
+  },
+  "HomePage": {
     "welcomeMessage": "World of Secrets",
     "heroSubtitle": "Experience the magical world of adventure",
-    "downloadButton": "Download Now"
+    "downloadButton": "Download Now",
+    "news": "Latest News",
+    "rates": "Rates",
+    "upcomingWars": "Upcoming Wars"
   },
   "Navbar": {
     "home": "Home",

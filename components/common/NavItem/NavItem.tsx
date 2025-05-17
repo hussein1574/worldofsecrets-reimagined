@@ -7,12 +7,13 @@ type TProps = {
   children: ReactNode;
   href: string;
   isButton?: boolean;
+  className?: string;
 };
 
-function NavItem({ children, href, isButton }: TProps) {
+function NavItem({ children, href, isButton, className }: TProps) {
   return (
     <Link
-      className={clsx(styles.link, { [styles.button]: isButton })}
+      className={clsx(styles.link, { [styles.button]: isButton }, className)}
       href={href}
     >
       {children}

@@ -1,0 +1,11 @@
+.subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  .icon {
+    font-size: 2rem;
+    color: var(--yellow-1000);
+  }
+}

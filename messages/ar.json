@@ -5,10 +5,14 @@
     "recharge": "الدفع وشحن الرصيد",
     "shop": "عربة الأسرار",
     "login": "تسجيل الدخول"
-  },  "HomePage": {
+  },
+  "HomePage": {
     "welcomeMessage": "عالم الأسرار",
     "heroSubtitle": "عش المغامرة في عالم سحري",
-    "downloadButton": "تحميل"
+    "downloadButton": "تحميل",
+    "news": "أحدث الأخبار",
+    "rates": "المضاعفات",
+    "upcomingWars": "الحروب القادمة"
   },
   "Navbar": {
     "home": "الرئيسية",

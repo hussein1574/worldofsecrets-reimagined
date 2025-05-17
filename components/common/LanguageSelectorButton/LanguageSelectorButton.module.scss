@@ -1,0 +1,14 @@
+.button {
+  padding: 0.5rem 0.5rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: var(--yellow-400);
+  text-shadow: -8px -3px 10px var(--black);
+  text-decoration: none;
+  cursor: pointer;
+  transition: 1s;
+
+  &:hover {
+    background-color: var(--black-lighter);
+  }
+}

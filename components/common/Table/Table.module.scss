@@ -1,0 +1,24 @@
+.table {
+  color: var(--black-lighter);
+  width: 100%;
+  font-size: 2rem;
+  border-collapse: collapse;
+
+  & > thead {
+    color: var(--yellow-1000);
+    & th {
+      padding: 1rem;
+    }
+  }
+
+  & > tbody {
+    & tr {
+      text-align: center;
+      border-top: 1px solid var(--yellow-300);
+      padding: 1rem;
+    }
+    & td {
+      padding: 1rem;
+    }
+  }
+}
