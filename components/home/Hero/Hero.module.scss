@@ -28,11 +28,15 @@
   position: relative;
   overflow: hidden;
   &__chr1 {
+    height: 75%;
+    width: auto;
     position: absolute;
     bottom: 0;
     right: 2%;
   }
   &__chr2 {
+    height: 75%;
+    width: auto;
     position: absolute;
     bottom: 0;
     left: 5%;

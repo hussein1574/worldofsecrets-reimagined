@@ -1,44 +1,113 @@
 .card {
-  min-height: 24rem;
+  min-height: 26rem;
+  min-width: 42rem;
   border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2rem;
+
   flex: 1;
 
-  // background: linear-gradient(
-  //   300deg,
-  //   var(--yellow-500) 0%,
-  //   var(--yellow-700) 100%
-  // );
-  // background-color: var(--yellow-500);
+  box-shadow: 0 4px 12px #0000004d, 0 2px 4px #00000033, inset 0 1px 2px #3b3c0e;
 
-  // box-shadow: 0 10px 20px rgba(255, 193, 7, 0.2), 0 6px 6px rgba(0, 0, 0, 0.1),
-  //   inset 0 -2px 5px rgba(255, 255, 255, 0.2);
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 61, 61, 0.9) 0%,
-    rgba(0, 41, 41, 0.95) 100%
-  );
-  background-color: rgba(0, 51, 51, 0.9);
+  border: 2px solid #3b3c0e;
 
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 2px 4px rgba(0, 0, 0, 0.2),
-    inset 0 1px 2px rgba(0, 255, 191, 0.05);
-
-  border: 1px solid rgba(0, 130, 130, 0.4);
-
-  &__large {
-    padding: 1rem 2rem;
+  &__teal {
+    background: linear-gradient(to bottom, #192719 0%, #262916 100%);
+    background-color: #223622;
   }
-  &__medium {
+  &__yellow {
+    background: linear-gradient(to bottom, #3b3c0e 0%, #4a4011 100%);
+    background-color: #3b3c0e;
+  }
+  &__tealBackground {
+    background-image: url("/assets/images/tealBackground.png");
+    filter: brightness(70%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; // Fill entire area without preserving aspect ratio
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    color: var(--yellow-100);
+  }
+  &__yellowBackground {
+    background-image: url("/assets/images/deseretBackground.png");
+    filter: brightness(70%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; // Fill entire area without preserving aspect ratio
+    background-position: center;
+    height: 100%;
+    width: 100%;
+
+    color: var(--teal-100);
+  }
+  &__upper {
+    border-radius: 10px 10px 0px 0px;
+    height: 25%;
+    width: 100%;
+
+    &__title {
+      color: var(--yellow-100);
+      font-size: 3rem;
+      font-weight: bold;
+      padding: 1rem;
+      margin-right: 10rem;
+
+      &__center {
+        text-align: center;
+        margin-right: 0;
+      }
+      &__left {
+        text-align: left;
+        margin-right: 0;
+        margin-left: 10rem;
+      }
+    }
+  }
+
+  &__lower {
+    border-radius: 0px 0px 10px 10px;
+    height: 75%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+
+    &__content {
+      width: 50%;
+      content: "";
+    }
+    &__characterContainer {
+      position: relative;
+      width: 45%;
+      height: 100%;
+      &__rightCharacter {
+        position: absolute;
+        height: 200%;
+        width: auto;
+        left: 0;
+        bottom: 0;
+      }
+      &__leftCharacter {
+        position: absolute;
+        height: 200%;
+        width: auto;
+        right: 0;
+        bottom: 0;
+      }
+    }
+    &__content {
+      width: 55%;
+      text-align: justify;
+      &__left {
+        padding: 2rem 0rem 2rem 1rem;
+      }
+      &__right {
+        padding: 2rem 1rem 2rem 1rem;
+      }
+    }
+  }
+  &__normalContainer {
+    text-align: justify;
+    width: 100%;
+    height: 100%;
     padding: 3rem;
-  }
-  &__small {
-    padding: 2rem;
-  }
-  &__title {
-    font-size: 2rem;
-    font-weight: bold;
   }
 }

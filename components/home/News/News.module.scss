@@ -1,8 +1,15 @@
-.hover {
+.yellowHover {
   transition: transform 0.3s, box-shadow 0.3s;
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(255, 136, 0, 0.363);
+    box-shadow: 0 10px 20px var(--yellow-400);
+  }
+}
+.tealHover {
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px var(--teal-600);
   }
 }
 .new {
@@ -21,15 +28,10 @@
   .textContainer {
     display: flex;
     flex-direction: column;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     height: 100%;
-    .newsTitle {
-      font-size: 2rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-      align-self: flex-start;
-    }
+    width: 100%;
 
     .newsDesc {
       font-size: 1.5rem;

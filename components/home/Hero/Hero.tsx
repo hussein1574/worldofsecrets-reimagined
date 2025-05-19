@@ -17,18 +17,8 @@ function Hero() {
           {t("downloadButton")}
         </NavItem>
       </div>
-      <Image
-        src={Character1}
-        alt="character 1"
-        width={400}
-        className={styles.hero__chr1}
-      />
-      <Image
-        src={Character2}
-        alt="character 2"
-        className={styles.hero__chr2}
-        width={400}
-      />
+      <Image src={Character1} alt="character 1" className={styles.hero__chr1} />
+      <Image src={Character2} alt="character 2" className={styles.hero__chr2} />
     </section>
   );
 }

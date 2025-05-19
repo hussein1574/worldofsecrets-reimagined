@@ -1,8 +1,7 @@
 import Card from "@/components/common/Card/Card";
 import styles from "./News.module.scss";
-import Image from "next/image";
-import Icon from "@/public/assets/images/ramadan_icon.png";
-import News2 from "@/public/assets/images/news2.jpg";
+import Character1 from "@/public/assets/images/Character1-Enhanced.png";
+import Character2 from "@/public/assets/images/Character2-Enhanced.png";
 import { useTranslations } from "next-intl";
 import Section from "@/components/common/Section/Section";
 
@@ -10,42 +9,60 @@ function News() {
   const t = useTranslations("HomePage");
   return (
     <Section title={t("news")}>
-      <Card size="Small" className={styles.hover}>
+      <Card
+        style="Yellow"
+        size="Small"
+        className={styles.yellowHover}
+        title="عنوان الخبر"
+        rightCharacter={Character2}
+      >
         <div className={styles.new}>
           <div className={styles.textContainer}>
-            <h3 className={styles.newsTitle}>عنوان الخبر</h3>
             <p className={styles.newsDesc}>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, est
               animi! Debitis, aliquam dolor odit consequatur labore vel iusto
               quibusdam optio placeat reiciendis.
             </p>
           </div>
-          <Image
-            className={styles.img}
-            src={News2}
-            alt="صورة الخبر"
-            width={100}
-            height={100}
-          />
         </div>
       </Card>
 
-      <Card size="Small" className={styles.hover}>
+      <Card
+        size="Small"
+        className={styles.yellowHover}
+        title="عنوان الخبر"
+        style="Yellow"
+      >
         <div className={styles.new}>
           <div className={styles.textContainer}>
-            <h3 className={styles.newsTitle}>عنوان الخبر</h3>
-            <p className={styles.newsDesc}>الخبر</p>
+            <p className={styles.newsDesc}>
+              {" "}
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, est
+              animi! Debitis, aliquam dolor odit consequatur labore vel iusto
+              quibusdam optio placeat reiciendis.Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Ut, est animi! Debitis, aliquam
+              dolor odit consequatur labore vel iusto quibusdam optio placeat
+              reiciendis.Lorem ipsum,
+            </p>
           </div>
-          <Image src={Icon} alt="صورة الخبر" width={100} />
         </div>
       </Card>
-      <Card size="Small" className={styles.hover}>
+      <Card
+        style="Teal"
+        size="Small"
+        className={styles.tealHover}
+        title="عنوان الخبر"
+        leftCharacter={Character1}
+      >
         <div className={styles.new}>
           <div className={styles.textContainer}>
-            <h3 className={styles.newsTitle}>عنوان الخبر</h3>
-            <p className={styles.newsDesc}>الخبر</p>
+            <p className={styles.newsDesc}>
+              {" "}
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, est
+              animi! Debitis, aliquam dolor odit consequatur labore vel iusto
+              quibusdam optio placeat reiciendis.
+            </p>
           </div>
-          <Image src={Icon} alt="صورة الخبر" width={100} />
         </div>
       </Card>
     </Section>

@@ -16,9 +16,9 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-
+  //dir={locale === "ar" ? "rtl" : "ltr"}
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+    <html lang={locale} dir="rtl">
       <body>
         <NextIntlClientProvider>
           <Header />
